@@ -1,0 +1,19 @@
+.recipe-list {
+    background-color: aliceblue;
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    scrollbar-width: none;
+}
+
+.recipe-item {
+    display: flex;
+    background-color: aqua;
+    width: 300;
+    height: auto;
+
+}
+
+.recipe-item img {
+    cursor: pointer;
+}

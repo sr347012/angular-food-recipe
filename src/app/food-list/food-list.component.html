@@ -1,0 +1,12 @@
+<input type="text" [(ngModel)]="searchName" required>
+<button (click)="search()"
+>Search</button>
+<div class="recipe-list">
+    <div class="recipe-item" *ngFor="let item of recipeLists">
+        <!-- {{item.recipe.label}} -->
+        <img src={{item.recipe.image}} class="recipe-item-image" alt=""
+        (click)="redirect(item._links.self.href)"
+        >
+    </div>
+    
+</div>
