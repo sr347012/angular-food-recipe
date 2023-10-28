@@ -13,15 +13,15 @@ export class FoodDetailComponent implements OnInit {
   myrecipe: any | undefined
   constructor(private activatedRoute: ActivatedRoute, private service: FoodRecipeService) {
     this.activatedRoute.params.subscribe((params: Params)=>{this.myId = params['id']});
-    this.service.getRecipeDetail(this.myId).subscribe((data: any)=> {
-      this.myrecipe = data.recipe;
-      console.log(this.myrecipe);
-    })
+
    }
 
   ngOnInit() {
     // console.log() 26c7a82641dc5b758192eb5db516c215
-
+    this.service.getRecipeDetail(this.myId).subscribe((data: any)=> {
+      this.myrecipe = data.recipe;
+      console.log(this.myrecipe);
+    })
     
   }
 

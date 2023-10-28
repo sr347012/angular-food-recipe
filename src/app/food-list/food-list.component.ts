@@ -9,11 +9,18 @@ import { Router } from '@angular/router';
 })
 export class FoodListComponent implements OnInit {
   recipeLists : any | undefined;
+  samplerecipes : any | undefined;
   searchName: string | undefined;
 
   constructor(private ser: FoodRecipeService, private router: Router) { }
 
   ngOnInit(): void {
+    this.ser.getAPI('Brinjal').subscribe((data: any)=> {
+      data = data.hits;
+      console.log(data);
+      this.samplerecipes = data;
+
+    });
   }
 
   search(){
