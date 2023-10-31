@@ -1,0 +1,59 @@
+.pot-home {
+
+}
+
+figcaption {
+    opacity: 50%;
+}
+
+figcaption a {
+    text-decoration: none;
+
+}
+
+.pot-img, .pot-img-tail {
+    background: url(./../../assets/pot02.jpg);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pot-img-tail {
+    background: url(./../../assets/pot01.jpg);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.recipe-list {
+    display: flex;
+    color: var(--bg06);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* width: 90%; */
+}
+
+.recipe-item {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 2px var(--bg03);
+
+
+}
+.recipe-item:hover  {
+    box-shadow: 1px 1px 3px 2px var(--bg06);
+    opacity: 60%;
+}
+
+.recipe-item img {
+    border-radius: 10px;
+}
+
+.recipe-item-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+}

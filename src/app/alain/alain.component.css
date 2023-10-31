@@ -1,0 +1,25 @@
+.alain-container {
+    color: var(--bg04);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.alain-intro {
+    /* width: 60%; */
+}
+.alain-intro-img {
+    background-image: url(./../../assets/al00.jpg);
+    object-fit: cover;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.alain-intro-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 60%; */
+    margin: 5%;
+    padding: 5%;
+}

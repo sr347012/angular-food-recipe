@@ -1,0 +1,22 @@
+<div class="pot-home">
+
+    <div class="pot-img">
+        <figcaption>Photo by <a href="https://unsplash.com/@jeshoots?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">JESHOOTS.COM</a> on <a href="https://unsplash.com/photos/bunch-of-potatoes-fp1x-X7DwDs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </figcaption>
+    </div>
+
+    <div class="recipe-list">
+        <div class="recipe-item" *ngFor="let item of samplerecipes">
+            <!-- {{item.recipe.label}}  (click)="redirect(item._links.self.href)" -->
+            <a><img src={{item.recipe.image}} class="recipe-item-image" alt=""><div class="recipe-item-text">{{item.recipe.label}}</div></a>
+        </div>
+    </div>
+
+    <!-- <div class="pot-img-tail">
+        <figcaption>Photo by <a href="https://unsplash.com/@blackieshoot?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">blackieshoot</a> on <a href="https://unsplash.com/photos/two-heart-shaped-gray-stones-p_SSRvFJmeI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </figcaption>
+    </div> -->
+
+</div>
+
+<app-footer></app-footer>

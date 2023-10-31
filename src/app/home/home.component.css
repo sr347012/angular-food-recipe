@@ -100,9 +100,16 @@ figcaption a {
 }
 
 hr {
-    background-color: var(--bg04);
-    color: var(--bg04);
+    border: 5px solid var(--bg03);
+    border-radius: 10px;
+    width: 80%;
 }
+.breakfast-img:hover, .lunch-img:hover, .dinner-img:hover, 
+.v1-img:hover, .v2-img:hover,.v3-img:hover,
+.t1-img:hover, .t2-img:hover,.t3-img:hover {
+    box-shadow: 0px 0px 2px 5px var(--bg06);
+    opacity: 70%;
+} 
 .breakfast-img {
     background-image: url(./../../assets/bf.jpg);
 }
@@ -155,9 +162,6 @@ hr {
     justify-content: center ;
     width: 100%;
 }
-
-
-
 
 
 

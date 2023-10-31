@@ -1,12 +1,24 @@
-<input type="text" [(ngModel)]="searchName" required>
-<button (click)="search()"
->Search</button>
+
+
+
+<div class="li-img">
+
+</div>
+<div class="search-box">
+    <input type="text" [(ngModel)]="searchName" required>
+    <button (click)="search()"
+    >Search</button>
+</div>
 <div class="recipe-list">
     <div class="recipe-item" *ngFor="let item of recipeLists">
-        <!-- {{item.recipe.label}} -->
-        <img src={{item.recipe.image}} class="recipe-item-image" alt=""
-        (click)="redirect(item._links.self.href)"
-        >
+        <a>
+            <img src={{item.recipe.image}} class="recipe-item-image" alt=""
+            (click)="redirect(item._links.self.href)"
+            >
+            <div class="recipe-item-text">{{item.recipe.label}}</div>
+        </a>
     </div>
     
 </div>
+
+<app-footer></app-footer>

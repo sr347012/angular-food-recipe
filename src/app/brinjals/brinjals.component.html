@@ -1,0 +1,15 @@
+<div class="brij-home">
+    <div class="brij-img">
+        <figcaption>
+            Photo by <a href="https://unsplash.com/@allysphotos?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alicia Christin Gerald</a> on <a href="https://unsplash.com/photos/a-basket-filled-with-lots-of-different-types-of-fruits-Gbca2AoIbHM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+        </figcaption>
+    </div>
+    <div class="recipe-list">
+        <div class="recipe-item" *ngFor="let item of samplerecipes">
+            <!-- {{item.recipe.label}}  (click)="redirect(item._links.self.href)" -->
+            <a><img src={{item.recipe.image}} class="recipe-item-image" alt=""><div class="recipe-item-text">{{item.recipe.label}}</div></a>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

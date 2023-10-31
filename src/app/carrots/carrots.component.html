@@ -1,0 +1,14 @@
+<div class="car-home">
+    <div class="car-img">
+        <figcaption>Photo by <a href="https://unsplash.com/@jonathanpielmayer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jonathan Pielmayer</a> on <a href="https://unsplash.com/photos/carrots-on-table-eFFnKMiDMGc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </figcaption>
+    </div>
+    <div class="recipe-list">
+        <div class="recipe-item" *ngFor="let item of samplerecipes">
+            <!-- {{item.recipe.label}}  (click)="redirect(item._links.self.href)" -->
+            <a><img src={{item.recipe.image}} class="recipe-item-image" alt=""><div class="recipe-item-text">{{item.recipe.label}}</div></a>
+        </div>
+    </div>
+
+</div>
+<app-footer></app-footer>

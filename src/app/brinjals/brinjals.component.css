@@ -1,0 +1,53 @@
+
+figcaption {
+    opacity: 50%;
+}
+
+figcaption a {
+    text-decoration: none;
+
+}
+
+.brij-img {
+    background: url(./../../assets/brij01.jpg);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.recipe-list {
+    display: flex;
+    color: var(--bg06);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    margin: 5%;
+    padding: 5%;
+    /* width: 90%; */
+}
+
+.recipe-item {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 2px var(--bg03);
+
+
+}
+.recipe-item:hover  {
+    box-shadow: 1px 1px 3px 2px var(--bg06);
+    opacity: 60%;
+}
+
+.recipe-item img {
+    border-radius: 10px;
+}
+
+.recipe-item-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
