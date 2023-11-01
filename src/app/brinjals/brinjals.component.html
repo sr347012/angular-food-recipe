@@ -8,7 +8,8 @@
     <div class="recipe-list">
         <div class="recipe-item" *ngFor="let item of samplerecipes">
             <!-- {{item.recipe.label}}  (click)="redirect(item._links.self.href)" -->
-            <a><img src={{item.recipe.image}} class="recipe-item-image" alt=""><div class="recipe-item-text">{{item.recipe.label}}</div></a>
+            <a><img (click)="redirect(item._links.self.href)"  src={{item.recipe.image}} 
+                class="recipe-item-image" alt=""><div class="recipe-item-text">{{item.recipe.label}}</div></a>
         </div>
     </div>
 </div>

@@ -1,0 +1,40 @@
+.detail-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg06);
+    font-family:  'Arial Narrow Bold', sans-serif;
+}
+
+.detail-cover {
+    background-image: url(./../../assets/c01.jpg);
+    object-fit: cover;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.detail-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+.detail-right img {
+    box-shadow: 1px 1px 5px 2px var(--bg03);
+    border-radius: 10px;
+}
+
+.detail-left h1 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.detail-left>div {
+    margin: 5px;
+    padding: 5px;
+}

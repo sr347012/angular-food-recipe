@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FoodRecipeService } from '../food-recipe.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-potatoes',
@@ -8,7 +9,7 @@ import { FoodRecipeService } from '../food-recipe.service';
 })
 export class PotatoesComponent implements OnInit {
 
-  constructor(private ser: FoodRecipeService) { }
+  constructor(private ser: FoodRecipeService, private router: Router) { }
 
   samplerecipes : any | undefined;
 
@@ -19,6 +20,11 @@ export class PotatoesComponent implements OnInit {
       this.samplerecipes = data;
 
     });
+  }
+  redirect(link: any) {
+    // console.log(link);
+    const id = link.split('/').reverse()[0].split('?')[0];
+    this.router.navigate(["/list", id])
   }
 
 }

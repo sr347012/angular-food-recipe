@@ -1,8 +1,50 @@
+<div class="detail-cover">
+        
+</div>
+<div class="detail-home" *ngIf="myrecipe !== undefined">
+    <!-- <h1>{{myId}}</h1> -->
+    <div class="detail-left">
+        <div>
+            <h1>{{myrecipe.label}}</h1>
+        </div>
+        <div>
+            Calories:{{cal}}
+        </div>
+        <div>Cuisine Type:
+            <span *ngFor="let item of myrecipe.cuisineType">
+                {{item}}
+            </span>
+        </div>
+        <div>Meal type:
+            <span *ngFor="let item of myrecipe.mealType">
+                {{item}}
+            </span>
+        </div>
+        <div>Ingredients:
+            <div *ngFor="let item of myrecipe.ingredientLines">
+                <ul>
+                    <li>{{item}}</li>
+                </ul>
+            </div>    
+        </div>
+        
+    </div>
 
-<h1>{{myId}}</h1>
-<div *ngIf="myrecipe !== undefined">
-    <img src={{myrecipe.images.LARGE.url}} alt="">
-    <h2>{{myrecipe.calories}}</h2>
+    <div class="detail-right">
+        <div class="detail-img">
+            <img src={{myrecipe.images.REGULAR.url}} alt="">
+            <!-- <img src={{myrecipe.image}} alt=""> -->
+        </div>
+        <div>Cautions:
+            <div *ngFor="let item of myrecipe.cautions">
+                <ul>
+                    <li>{{item}}</li>
+                </ul>
+            </div>
+        </div>    
+    </div>
+
 
 </div>
 
+<app-footer></app-footer>
