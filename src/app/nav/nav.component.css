@@ -1,0 +1,28 @@
+.nav-container {
+    color: var(--bg06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.nav-left {
+    width: 50%;
+}
+.nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bg06);
+}
+
+.nav-home-img {
+
+}

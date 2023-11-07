@@ -9,6 +9,7 @@ import { AnthonyComponent } from './anthony/anthony.component';
 import { BrinjalsComponent } from './brinjals/brinjals.component';
 import { CarrotsComponent } from './carrots/carrots.component';
 import { PotatoesComponent } from './potatoes/potatoes.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,9 @@ const routes: Routes = [
   },
   {
   path: 'anthony', component: AnthonyComponent
+  },
+  {
+  path: 'about', component: AboutComponent
   },
   {
   path: 'list', component: FoodListComponent

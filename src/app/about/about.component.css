@@ -1,0 +1,86 @@
+.about-content {
+    color: var(--bg06);
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    background: linear-gradient(90deg, var(--bg01) 0%, var(--bg03) 50%, var(--bg01) 100%) ;
+
+}
+hr {
+    border: 2px solid var(--bg06);
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg06);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+.about-img {
+    background-image: url(./../../assets/rnd01.jpg);
+    object-fit: cover;
+    object-position: center;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.welcome-img, .why-img, .what-img, .mission-img, .who-img, .final-img {
+    width: 40%;
+    height: 40vh;
+    object-position: center;
+    background-position: center;
+}
+
+.welcome-img {
+    background-image: url(./../../assets/rnd02.jpg);
+}
+
+.what-img {
+    background-image: url(./../../assets/rnd03.jpg);
+}
+.why-img {
+    background-image: url(./../../assets/rnd04.jpg);
+}
+.who-img {
+    background-image: url(./../../assets/rnd03.jpg);
+}
+.mission-img {
+    background-image: url(./../../assets/mission.jpg);
+}
+.final-img {
+    background-image: url(./../../assets/rnd02.jpg);
+}
+
+.welcome-content, .why-content, .what-content, .mission-content, .final-content, .mission-content, .who-content {
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.about-welcome, .about-who, .about-what, .about-mission ,.about-why, .about-final {
+    /* border: 2px solid var(--bg06); */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+
+
